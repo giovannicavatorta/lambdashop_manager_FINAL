@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import "./LambdaManagerApp.css";
 import WelcomeComponent from './Welcome/WelcomeComponent';
 import CustomerComponent from './Customers/CustomerComponent';
 import GiftComponent from './Gifts/GiftComponent';
@@ -49,5 +50,11 @@ export default class LambdaManagerApp extends Component {
 
 // Componente per notificare un errore di routing
 function ErrorComponent() {
-    return <div>Errore, pagina non trovata! :(</div>
+    return (
+        <div>
+            <h2>Errore, pagina non trovata! :(</h2>
+            <br />
+            <img className="error" src={`../error.png`} width="300" height="300" alt=""/>
+        </div>
+    )
 }
