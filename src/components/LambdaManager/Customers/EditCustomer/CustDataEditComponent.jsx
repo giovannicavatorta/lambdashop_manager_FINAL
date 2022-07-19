@@ -134,7 +134,6 @@ export default class CustDataEditComponent extends Component {
 
     validate = (values) => {
         let errors = {}
-        //
         // Qui commento il controllo relativo al codice secondario non univoco. Non serve,
         // il campo è disabled dunque non modificabile
         /*
